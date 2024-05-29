@@ -7,14 +7,17 @@ curl https://pyenv.run | bash
 # 3. Make .bashrc backup
 cp ~/.bashrc ~/.bashrc.bkp
 
-# 4. Add the following entries into your ~/.bashrc file:
+# 4. Reload shell for export path:
+exec $SHELL
+
+# 5. Add the following entries into your ~/.bashrc file:
 echo "export PATH=\"$HOME/.pyenv/bin:$PATH\"" >> ~/.bashrc ; 
 echo "eval \"\$(pyenv init --path)\"" >> ~/.bashrc ; 
 echo "eval \"\$(pyenv virtualenv-init -)\"" >> ~/.bashrc ; 
 
-# 5. Restart your shell:
+# 6. Restart your shell for commit changes:
 exec $SHELL
 
-# 6. Validate installation:
+# 7. Validate installation:
 pyenv --version
 
