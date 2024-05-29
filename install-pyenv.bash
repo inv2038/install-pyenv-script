@@ -9,7 +9,7 @@ cp ~/.bashrc ~/.bashrc.bkp
 
 # 4. Add the following entries into your ~/.bashrc file:
 echo "export PATH=\"$HOME/.pyenv/bin:$PATH\"" >> ~/.bashrc ; 
-exec $SHELL
+export PATH="$HOME/.pyenv/bin:$PATH"
 echo "eval \"\$(pyenv init --path)\"" >> ~/.bashrc ; 
 echo "eval \"\$(pyenv virtualenv-init -)\"" >> ~/.bashrc ; 
 
