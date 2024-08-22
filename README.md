@@ -1,4 +1,4 @@
-# Simple script for install pyright from shell
+# Simple script for install pyenv from shell
 
 Usage example:
 ```bash
